@@ -1,5 +1,5 @@
 {
-    "name": "wyrihaximus/react-parallel-future-to-promise-converter",
+    "name": "react-parallel/future-to-promise-converter",
     "description": "ReactPHP ext-parallel Future to Promise converter",
     "license": "MIT",
     "authors": [
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "WyriHaximus\\React\\Parallel\\": "src/"
+            "ReactParallel\\FutureToPromiseConverter\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "WyriHaximus\\React\\Tests\\Parallel\\": "tests/"
+            "ReactParallel\\Tests\\FutureToPromiseConverter\\": "tests/"
         }
     },
     "scripts": {

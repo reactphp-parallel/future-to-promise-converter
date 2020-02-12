@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace WyriHaximus\React\Tests\Parallel;
+namespace ReactParallel\Tests\FutureToPromiseConverter;
 
 use parallel\Future;
 use parallel\Runtime;
@@ -8,7 +8,7 @@ use React\EventLoop\Factory;
 use React\EventLoop\LoopInterface;
 use function Safe\sleep;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
-use WyriHaximus\React\Parallel\FutureToPromiseConverter;
+use ReactParallel\FutureToPromiseConverter\FutureToPromiseConverter;
 
 /**
  * @internal

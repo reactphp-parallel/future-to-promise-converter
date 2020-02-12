@@ -11,9 +11,14 @@
     "mutators": {
         "@default": true,
         "MethodCallRemoval": {
-        "ignore": [
-            "WyriHaximus\\React\\Parallel\\FutureToPromiseConverter::convert"
-]
+            "ignore": [
+                "ReactParallel\\FutureToPromiseConverter\\FutureToPromiseConverter::convert"
+            ]
+        },
+        "LogicalNot": {
+            "ignore": [
+                "ReactParallel\\FutureToPromiseConverter\\FutureToPromiseConverter::convert"
+            ]
         }
     }
 }

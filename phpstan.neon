@@ -1,6 +1,6 @@
 parameters:
 	ignoreErrors:
-		- '#In method "WyriHaximus\\React\\Parallel\\FutureToPromiseConverter::convert", caught "Throwable" must be rethrown. Either catch a more specific exception or add a "throw" clause in the "catch" block to propagate the exception. More info: http:\/\/bit.ly\/failloud#'
+		- '#In method "ReactParallel\\FutureToPromiseConverter\\FutureToPromiseConverter::convert", caught "Throwable" must be rethrown. Either catch a more specific exception or add a "throw" clause in the "catch" block to propagate the exception. More info: http:\/\/bit.ly\/failloud#'
 		- '#Do not throw the \\Exception base class. Instead, extend the \\Exception base class. More info: http:\/\/bit.ly\/subtypeexceptio#'
 
 includes:
