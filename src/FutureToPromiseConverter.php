@@ -7,11 +7,11 @@ use React\EventLoop\LoopInterface;
 use React\EventLoop\TimerInterface;
 use React\Promise\Promise;
 use React\Promise\PromiseInterface;
+use Throwable;
 
 final class FutureToPromiseConverter
 {
-    /** @var LoopInterface */
-    private $loop;
+    private LoopInterface $loop;
 
     public function __construct(LoopInterface $loop)
     {
@@ -20,10 +20,9 @@ final class FutureToPromiseConverter
 
     public function convert(Future $future): PromiseInterface
     {
-        return new Promise(function ($resolve, $reject) use ($future): void {
-            /** @var TimerInterface|null $timer */
+        return new Promise(function (callable $resolve, callable $reject) use ($future): void {
             $timer = $this->loop->addPeriodicTimer(0.001, function () use (&$timer, $future, $resolve, $reject): void {
-                if (!$future->done()) {
+                if (! $future->done()) {
                     return;
                 }
 
@@ -33,7 +32,7 @@ final class FutureToPromiseConverter
 
                 try {
                     $resolve($future->value());
-                } catch (\Throwable $throwable) {
+                } catch (Throwable $throwable) {
                     $reject($throwable);
                 }
             });

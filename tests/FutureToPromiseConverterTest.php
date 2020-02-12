@@ -5,7 +5,6 @@ namespace ReactParallel\Tests\FutureToPromiseConverter;
 use parallel\Future;
 use parallel\Runtime;
 use React\EventLoop\Factory;
-use React\EventLoop\LoopInterface;
 use function Safe\sleep;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
 use ReactParallel\FutureToPromiseConverter\FutureToPromiseConverter;
@@ -22,7 +21,7 @@ final class FutureToPromiseConverterTest extends AsyncTestCase
         $runtime = new Runtime(dirname(__DIR__) . '/vendor/autoload.php');
 
         /** @var Future $future */
-        $future = $runtime->run(function () {
+        $future = $runtime->run(function (): int {
             sleep(3);
 
             return 3;
