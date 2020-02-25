@@ -18,8 +18,9 @@ composer require react-parallel/future-to-promise-converter
 # Usage
 
 ```php
+use parallel\Future;
+use parallel\Runtime;
 use React\EventLoop\Factory;
-use React\EventLoop\LoopInterface;
 use ReactParallel\FutureToPromiseConverter\FutureToPromiseConverter;
 
 $loop = Factory::create();
@@ -34,7 +35,7 @@ $future = $runtime->run(function () {
     return 3;
 });
 
-$converter->convert($future)->then(function ($value) {
+$converter->convert($future)->done(function ($value) {
     // $value will be 3 here
 });
 ```
