@@ -1,11 +1,11 @@
-# ReactPHP ext-parallel Future to Promise converter
+# ext-parallel Future to ReactPHP Promise converter
 
-[![Build Status](https://travis-ci.com/Reactphp-parallel/future-to-promise-converter.svg?branch=master)](https://travis-ci.com/Reactphp-parallel/future-to-promise-converter)
+![Continuous Integration](https://github.com/Reactphp-parallel/future-to-promise-converter/workflows/Continuous%20Integration/badge.svg)
 [![Latest Stable Version](https://poser.pugx.org/React-parallel/future-to-promise-converter/v/stable.png)](https://packagist.org/packages/React-parallel/future-to-promise-converter)
 [![Total Downloads](https://poser.pugx.org/React-parallel/future-to-promise-converter/downloads.png)](https://packagist.org/packages/React-parallel/future-to-promise-converter)
 [![Code Coverage](https://scrutinizer-ci.com/g/Reactphp-parallel/future-to-promise-converter/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Reactphp-parallel/future-to-promise-converter/?branch=master)
+[![Type Coverage](https://shepherd.dev/github/Reactphp-parallel/future-to-promise-converter/coverage.svg)](https://shepherd.dev/github/Reactphp-parallel/future-to-promise-converter)
 [![License](https://poser.pugx.org/React-parallel/future-to-promise-converter/license.png)](https://packagist.org/packages/React-parallel/future-to-promise-converter)
-[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/reactphp-http-middleware-clear-body/badge.svg)](https://travis-ci.org/WyriHaximus/reactphp-http-middleware-clear-body)
 
 # Install
 
